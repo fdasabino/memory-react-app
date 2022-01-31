@@ -69,7 +69,7 @@ export const likePost = (id) => async (dispatch) => {
     const { data } = await api.likePost(id);
     Toast.fire({
       icon: "success",
-      title: "Great your like a post!",
+      title: "Great! You liked a post!",
     });
     dispatch({ type: LIKE, payload: data });
   } catch (error) {
